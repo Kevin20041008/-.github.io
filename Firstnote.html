@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <head>
+        <h1 align="center">
+            第一次前端学习
+        </h1>
+        <h2 align="left">
+            一、基本概述
+        </h2>
+        <h3 align="left">
+            1.认识网页
+        </h3>
+        <p>
+        <ol>
+            <li>文字、图片、超链接、音频/视频</li>
+            <li>查看一个网页的源代码（右键选择查看源代码）</li>
+            <li>浏览器是将代码转化为页面的工具，<em>主要是解析和渲染</em></li>
+        </ol>
+        </p>
+        <h3 align="left">
+            2.五大浏览器和渲染引擎
+        </h3>
+        <ol>
+            <li>IE,Firefox(火狐),Chrome<b>用得最多</b>,Safari,OPera</li>
+            <li>渲染引擎（浏览器内核）：浏览器中专门对代码进行解析渲染的部分</li>
+            <li>浏览器出品公司不同，内在渲染引擎不同，相应解析代码 </li>
+        </ol>
+        <h3 align="left">
+            3.web标准
+        </h3>
+        <p>
+            让不同浏览器按照相同的标准显示效果
+            <br>
+            三个构成：
+        <ol>
+            <li>HTML：页面元素，内容
+            </li>
+            <li>
+                CSS：网页元素的外观和位置等页面模式
+            </li>
+            <li>
+                JavaScrip：网页模型的定义和页面交互
+            </li>
+        </ol>
+        </p>
+        <h2>
+            二、HTML基础认知
+        </h2>
+        <h3>
+            1.HTML的概念（Hyper Text Markup Language）
+        </h3>
+        <p>
+            超文本标记语言
+            <br>
+        <ol>
+            <li>
+                双标签，比如html
+            </li>
+            <li>
+                单标签，比如imag
+            </li>
+        </ol>
+        <h3>
+            2.HTML5的DOCTYPE声明
+        </h3>
+        DOCTYPE:document type的缩写
+        <br>
+        DOCTYPE是H5的声明，位于文档的最前面，处于标签之前，是网页必备的组成部分，避免浏览器的怪异模式
+
+        </p>
+        <h3>
+            3.标签
+        </h3>
+        <h4>
+            (1)title标签
+        </h4>
+        <p>
+        <ol>
+            <li>
+                可以定义文档的标题
+            </li>
+            <li>
+                会显示在浏览器窗口的标题栏或状态栏上
+            </li>
+            <li>
+                title标签是head标签中唯一必须要求包含的东西
+            </li>
+            <li>
+                title的增加有利于SEO的优化
+                <br>
+                <i>
+                    SEO:搜索引擎优化的英文缩写，通过对网站内容调整，满足搜索引擎的排名需求
+                </i>
+            </li>
+        </ol>
+        <h4>
+            (2)快捷键
+        </h4>
+        <ol>
+            <li>
+                初始快捷键：！+Enter
+            </li>
+            <li>
+                代码格式化：Shift +Alt +F
+            </li>
+            <li>
+                向上/向下移动一行，Alt+up/Alt+Down
+            </li>
+            <li>
+                快速复制下一行代码：Shift+Alt+Up/Shft+Alt+Down
+            </li>
+            <li>
+                快速查找：Ctrl+F
+            </li>
+            <li>
+                快速替换：Ctrl+H
+            </li>
+        </ol>
+        </p>
+        <h4>
+            (3)标题的介绍和应用
+        </h4>
+        <p>
+            h1到h6定义从最大到最小的标题
+            <br>
+            生成h1-h6的快捷键：h$*6
+            <br>
+            标题的位置摆放
+        <ol>
+            <li>
+                使用align
+            </li>
+            <li>
+                left/center/right
+            </li>
+            <li>语法为：align="left|center|right"</li>
+            <li>
+                align一般不推荐使用，默认在左边
+            </li>
+
+        </ol>
+        </p>
+        <h4>
+            (4) 段落、换行、水平线
+        </h4>
+        <ol>
+            <li>
+                段落是通过p标签定义的
+            </li>
+            <li>
+                换行：若不希望产生一个新段落进行换行，br（单标签）
+                <br>
+                br/元素是一个空的HTML元素
+            </li>
+            <li>
+                水平线（单标签）
+                <br>
+                hr/标签在HTML页面中创建水平线
+                <br>
+                hr之后color=" " width=" "（长度）size=" " align=" "
+                <br>
+                align代表对齐方式，默认是居中，可取值有left|right
+
+            </li>
+        </ol>
+        <h4>
+            (5)图片
+        </h4>
+        <p>
+            用imag标签定义HTML页面中的图像
+            <br>
+            imag是单标签
+        <ol>
+            <li>
+                src:路径
+            </li>
+            <li>
+                alt:规定图像的宽度
+            </li>
+            <li>
+                width:规定图像宽度
+            </li>
+            <li>
+                height:规定图像的高度
+            </li>
+            <li>
+                title：鼠标悬停在图片上给予的提示
+            </li>
+        </ol>
+        图片路径（src属性）
+        <br>
+        绝对/相对/网络路径
+        <ol>
+            <li>
+                绝对路径：电脑盘符存储与访问的具体地址
+
+            </li>
+            相对路径：
+
+            <li>
+                相对路径
+            </li>
+            二者相对关系，二者在同一路径下可以直接访问
+            <ol>
+                <li>
+                    子级关系
+                </li>
+                <li>
+                    父级关系
+                </li>
+                <li>
+                    同级关系
+                </li>
+            </ol>
+            <li>
+                网络路径
+                <br>
+                具体的网络地址：http:~.png
+            </li>
+        </ol>
+
+        </p>
+        绝对路径
+        <img src="6.jpg" alt="朝阳" width="300px" title="朝阳">
+        <br>相对路径
+        <img src="C:\Users\xmkevin\Desktop\前端学习代码\html5\practice/2.jpg" alt="云彩" width="300px" title="云彩">
+        <hr>
+        <h4>
+            (6)超文本链接
+        </h4>
+        <p>
+            使用a标签来设置超文本标签
+            <br>
+            超文本链接可以是一个字，一个词，一组词，或者一幅图像
+            <br>
+            href后面写url地址，两个括号之间写链接文本
+        <ol>
+            <li>
+                一个未访问过的链接显示未蓝色字体并带有下划线
+            </li>
+            <li>
+                访问过的链接显示为紫色并带有下划线
+            </li>
+            <li>
+                点击链接时，链接显示未红色并带有下划线
+            </li>
+            <li>
+                可通过CSS修改效果
+            </li>
+        </ol>
+        超链接表现：当把鼠标移动到网页的某个链接上时，箭头会变成一只小手
+        </p>
+
+        超链接
+        <a href="www.google.com">谷歌</a>
+        
+
+
+
+</body>
+
+</html>
